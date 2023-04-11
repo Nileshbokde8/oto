@@ -21,14 +21,14 @@
    
 }
 .col-md-7{
-    /* background-color: #c4f2f5; */background: linear-gradient(to right, #f1cfe4 0%, #490829 100%);
+    /* background-color: #c4f2f5;  background: linear-gradient(to right, #f1cfe4 0%, #490829 100%);*/
     color: rgb(41, 39, 5);
     padding: 20px;
 }
 .col-md-5{
-    /* background: #3e3f30; */background: linear-gradient(to left, #066483 0%, #4e0429 100%);
+     background: #171812; /*background: linear-gradient(to left, #066483 0%, #4e0429 100%); */
     padding: 20px;
-    color: white;
+    color: rgb(253, 249, 249);
 }
 .form-control {
     height: 52px;
@@ -42,7 +42,7 @@
 }
 
 .form-control:hover{
-    border: 3px solid #2bf8ee;
+    border: 3px solid #0e1111;
 }
 .bi{
     font-size: 20px;
