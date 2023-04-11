@@ -21,8 +21,10 @@
    
 }
 .col-md-7{
-    /* background-color: #c4f2f5;  background: linear-gradient(to right, #f1cfe4 0%, #490829 100%);*/
-    color: rgb(41, 39, 5);
+    border-radius: 10px;
+    border-color: #fdfafa;
+    background: linear-gradient(to right, #070004 0%, #2c0117 100%);
+    color: rgb(250, 250, 247);
     padding: 20px;
 }
 .col-md-5{
@@ -33,7 +35,7 @@
 .form-control {
     height: 52px;
     background: white;
-    color: #000;
+    color: #fdfafa;
     font-size: 14px;
     border-radius: 10px;
     -webkit-box-shadow: none !important;
@@ -42,7 +44,7 @@
 }
 
 .form-control:hover{
-    border: 3px solid #0e1111;
+    border: 5px solid #0df5fd;
 }
 .bi{
     font-size: 20px;
