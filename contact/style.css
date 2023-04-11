@@ -43,6 +43,10 @@
     border: 3px solid rgba(0, 0, 0, 0.1);
 }
 
+.link-a:hover{
+    color: rgb(201, 105, 16);
+}
+
 .form-control:hover{
     border: 5px solid #0df5fd;
 }
@@ -50,7 +54,9 @@
     font-size: 20px;
 }
 .bi:hover{
-    font-size: 25px;
+    
+    font-size: 21px;
+    color: rgb(201, 105, 16);
 }
 .d-flex p{
     font-size: 18px;
