@@ -28,6 +28,15 @@ color: azure;
           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
           color: black;
         }
+        .link-heading{
+          text-align: center;
+          color: azure;
+          font-size: 30px;
+          font-weight: bolder;
+        }
+        .container-lg{
+          margin: 0px auto;
+        }
     </style>
     <link rel="stylesheet" href="./../js/output-page.js">
 </head>
@@ -77,7 +86,11 @@ color: azure;
   <span class="tital-name"> Address:-</span><span id="address"></span> <span id="address2"></span><br>
   <span class="tital-name"> City:-</span><span id="cty"></span><br>
     </div>
-    <script>
+    <div class="container-lg">
+    <span class="link-heading"> click below button to generate</span><br>
+    <button class="btn btn-outline-light" onclick="copy()">create URL</button>
+  </div>
+<script>
       window.addEventListener("load",function() {
         const shopname=sessionStorage.getItem("SHOPNAME");
         const ownername=sessionStorage.getItem("OWNERNAME");
@@ -100,6 +113,10 @@ color: azure;
       document.getElementById("cty").innerHTML=city;
 
       });
+      function copy() {
+       document.write(location.href);
+      }
+     
     </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
