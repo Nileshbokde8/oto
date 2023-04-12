@@ -18,18 +18,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><img src="./img-container/icons/home (4).png" alt=""> Home</a>
+          <a class="nav-link active" aria-current="page" href="./../index.html"><img src="./img-container/icons/home (4).png" alt=""> Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             More
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#"><img src="./img-container/icons/user.png" alt=""> My Account</a></li>
-            <li><a class="dropdown-item" href="#"><img src="./img-container/icons/customer-service.png" alt=""> help and support</a></li>
+            <li><a class="dropdown-item" href="./contatc.html">help and support</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./aboutus.html"><img src="././img-container/icons/users-avatar.png" alt=""> About Us</a></li>
-            <li><a class="dropdown-item" href="./login.html"><img src="././img-container/icons/users-avatar.png" alt=""> Login</a></li>
+            <li><a class="dropdown-item" href="./aboutus.html">About Us</a></li>
+            <li><a class="dropdown-item" href="./login.html"> Login</a></li>
+            <li><a class="dropdown-item" href="./form.html">Register</a></li>
           </ul>
          
         </li>
@@ -158,6 +158,7 @@
         sessionStorage.setItem("UPIID",upiid);
         sessionStorage.setItem("ADDRESS1",Address1);
         sessionStorage.setItem("ADDRESS2",Address2);
+        sessionStorage.setItem("CITY",city);
        return;
         }
        function pageready() {

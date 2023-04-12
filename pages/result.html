@@ -75,6 +75,7 @@ color: azure;
   <span class="tital-name"> Email Id:-</span><span id="email"></span><br>
   <span class="tital-name"> UPI ID:-</span><span id="upi"></span><br>
   <span class="tital-name"> Address:-</span><span id="address"></span> <span id="address2"></span><br>
+  <span class="tital-name"> City:-</span><span id="cty"></span><br>
     </div>
     <script>
       window.addEventListener("load",function() {
@@ -86,6 +87,7 @@ color: azure;
         const email =sessionStorage.getItem("EMAIL");
         const Address1 =sessionStorage.getItem("ADDRESS1");
         const Address2 =sessionStorage.getItem("ADDRESS2");
+        const city =sessionStorage.getItem("CITY");
       //printing the containt
       document.getElementById("shopnam").innerHTML= shopname;
       document.getElementById("owner-name").innerHTML=ownername;
@@ -95,6 +97,8 @@ color: azure;
       document.getElementById("upi").innerHTML=upiid;
       document.getElementById("address").innerHTML=Address1;
       document.getElementById("address2").innerHTML=Address2;
+      document.getElementById("cty").innerHTML=city;
+
       });
     </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
