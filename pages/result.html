@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        .main-con{
+            background-color: aliceblue;
+            margin: 20px auto;
+        }
+        .container-heading{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align:center;
+            word-spacing: 4px;
+        }
+        .container-xl{
+          border: 4px solid snow;
+         background-color: #4c4177;
+background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+color: azure;
+        }
+        .tital-name{
+          font-size: 30px;
+          font-weight: bolder;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="./../js/output-page.js">
+</head>
+<body class="bg-dark">
+     <!--NAV BAR CONTAINER -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light m-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">OTO(offline to online)</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><img src="./img-container/icons/home (4).png" alt=""> Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href=""><img src="./img-container/icons/user.png" alt=""> My Account</a></li>
+              <li><a class="dropdown-item" href="./pages/contatc.html"><img src="./img-container/icons/customer-service.png" alt=""> help and support</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./pages/aboutus.html"><img src="././img-container/icons/users-avatar.png" alt=""> About Us</a></li>
+              <li><a class="dropdown-item" href="./pages/login.html"><img src="././img-container/icons/users-avatar.png" alt=""> Login</a></li>
+          
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div> 
+  </nav>
+  <!-- NAV BAR CONTAINER END HERE -->
+    <div class="container-xl main-con">
+        <h1 id="shopnam" class="container-heading"></h1>
+        <hr>
+  <span class="tital-name"> Owner Name:-</span><span id="owner-name"></span><br>
+  <span class="tital-name"> Mobile No:-</span><span id="mob"></span><br>
+  <span class="tital-name"> Alt Mobile No:-</span><span id="altmob"></span><br>
+  <span class="tital-name"> Email Id:-</span><span id="email"></span><br>
+  <span class="tital-name"> UPI ID:-</span><span id="upi"></span><br>
+  <span class="tital-name"> Address:-</span><span id="address"></span> <span id="address2"></span><br>
+    </div>
+    <script>
+      window.addEventListener("load",function() {
+        const shopname=sessionStorage.getItem("SHOPNAME");
+        const ownername=sessionStorage.getItem("OWNERNAME");
+        const contact  =sessionStorage.getItem("CONTACT");
+        const upiid =sessionStorage.getItem("UPIID");
+        const altcontact =sessionStorage.getItem("ALTCONTACT");
+        const email =sessionStorage.getItem("EMAIL");
+        const Address1 =sessionStorage.getItem("ADDRESS1");
+        const Address2 =sessionStorage.getItem("ADDRESS2");
+      //printing the containt
+      document.getElementById("shopnam").innerHTML= shopname;
+      document.getElementById("owner-name").innerHTML=ownername;
+      document.getElementById("mob").innerHTML=contact;
+      document.getElementById("altmob").innerHTML=altcontact;
+      document.getElementById("email").innerHTML=email;
+      document.getElementById("upi").innerHTML=upiid;
+      document.getElementById("address").innerHTML=Address1;
+      document.getElementById("address2").innerHTML=Address2;
+      });
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
